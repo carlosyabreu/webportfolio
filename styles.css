@@ -24,3 +24,20 @@ nav {
     align-items: center;
     gap: 1rem;
 }
+
+nav i {
+    font-size: 1.3rem;
+}
+
+main, section {
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    gap: 4rem;
+}
+
+section {
+    gap: 1rem;
+}
