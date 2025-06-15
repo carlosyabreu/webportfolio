@@ -5,14 +5,22 @@ body {
     flex-direction: column;
 }
 
-header, 
-main, 
-footer {
+header, main, footer { 
     max-height: 800px;
     width: 100%;
     margin: 0 auto;
+    padding: 2rem;
 }
 
 header {
     display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
 }
