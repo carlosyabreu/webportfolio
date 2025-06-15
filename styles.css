@@ -79,3 +79,10 @@ section {
     flex-direction: column;
     gap: 1rem;
 }
+
+.project-links {
+    display: flex;
+    flex-direction: center;
+    gap: 1rem;
+    padding: 0.5rem;
+}
