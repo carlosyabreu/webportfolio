@@ -82,7 +82,34 @@ section {
 
 .project-links {
     display: flex;
-    flex-direction: center;
+    align-items: center;
     gap: 1rem;
-    padding: 0.5rem;
+    padding-top: 0.5rem;
+}
+
+.tech-list {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+    padding: 0.25rem 0;
+}
+
+.tech-list div {
+    padding: 0.1rem 0.5rem;
+    border-radius: var(--border-radius-small--)
+}
+
+.tech-list p {
+    font-size: 0.8rem;
+}
+
+@media (min-width: 640px) {
+    .project-card {
+        flex-direction: row;
+    }
+
+    .project-card .img-div {
+        max-width: 30%;  
+    }
 }
