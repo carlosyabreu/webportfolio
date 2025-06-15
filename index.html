@@ -41,7 +41,7 @@
             <div class="color-div">
                 <h4>Pick a colour</h4>
                 <p style="display: none;">Great... now it's ruined!</p>
-                <input type="color" class="colour-picker" onchange="" value="#0084ff" />
+                <input type="color" class="color-picker" onchange="" value="#0084ff" />
                 <button style="display: none;" onclick="">Reset</button>
             </div>
         </section>
@@ -175,8 +175,37 @@
         // This is where we create the interactivity for our little colour switching game
 
         // 1. Select all HTML elements so we can later manipulate them
+        const body = document.querySelector('body')
+        const colorInput = document.getElementById('color-picker')
+        const colorDiv = document.querySelector('.color-div')
+        const hiddenText = document.querySelector('.color-div .p')
+        const resetBtn = document.querySelector('.color-div button')
+        const playBtn = document.getElementById('play-game')
 
         // 2. Create the functions
+
+        function playGame() {
+            // This function enables the play of the game by showing the colour select input
+            colorDiv.style.display = 'block'
+            playBtn.style.display = 'none'
+        }
+
+        function changeColor() {
+            // Take the users selected colour on the input, and assign it to be the background colour of the website 
+            const selectedColor = colorInput.value
+            body.style.background = selectedColor
+            reset.style.display = 'block'
+            hiddenText.style.display = 'block'
+            colorInput.style.display = 'none'
+        }
+
+        function resetColor() {
+            body.style.background = 'white'
+            colorInput.style.display = 'block'
+            hiddenText.style.display = 'none'
+            resetBtn.style.display = 'none'
+            colorDiv.style.display = 'none'
+        }
 
         // 3. Assign the functions to the buttons by adding them to the function call to the actual elements (done above in the html code)
 
