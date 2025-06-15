@@ -56,3 +56,14 @@ section {
     gap: 1rem;
     padding: 1rem 0;
 }
+
+.link-arrow {
+    color: var(--color-link);
+    transform: rotate(-45deg); 
+}
+
+.color-div {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
